@@ -1,0 +1,228 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$bag-name: 'bag';
+$bag-x: 122px;
+$bag-y: 72px;
+$bag-offset-x: -122px;
+$bag-offset-y: -72px;
+$bag-width: 27px;
+$bag-height: 24px;
+$bag-total-width: 158px;
+$bag-total-height: 141px;
+$bag-image: '../images/sprite.png';
+$bag: (122px, 72px, -122px, -72px, 27px, 24px, 158px, 141px, '../images/sprite.png', 'bag', );
+$buton-ico-name: 'buton-ico';
+$buton-ico-x: 0px;
+$buton-ico-y: 120px;
+$buton-ico-offset-x: 0px;
+$buton-ico-offset-y: -120px;
+$buton-ico-width: 38px;
+$buton-ico-height: 21px;
+$buton-ico-total-width: 158px;
+$buton-ico-total-height: 141px;
+$buton-ico-image: '../images/sprite.png';
+$buton-ico: (0px, 120px, 0px, -120px, 38px, 21px, 158px, 141px, '../images/sprite.png', 'buton-ico', );
+$clok-name: 'clok';
+$clok-x: 61px;
+$clok-y: 120px;
+$clok-offset-x: -61px;
+$clok-offset-y: -120px;
+$clok-width: 20px;
+$clok-height: 20px;
+$clok-total-width: 158px;
+$clok-total-height: 141px;
+$clok-image: '../images/sprite.png';
+$clok: (61px, 120px, -61px, -120px, 20px, 20px, 158px, 141px, '../images/sprite.png', 'clok', );
+$fb-name: 'fb';
+$fb-x: 122px;
+$fb-y: 36px;
+$fb-offset-x: -122px;
+$fb-offset-y: -36px;
+$fb-width: 36px;
+$fb-height: 36px;
+$fb-total-width: 158px;
+$fb-total-height: 141px;
+$fb-image: '../images/sprite.png';
+$fb: (122px, 36px, -122px, -36px, 36px, 36px, 158px, 141px, '../images/sprite.png', 'fb', );
+$gift-name: 'gift';
+$gift-x: 61px;
+$gift-y: 60px;
+$gift-offset-x: -61px;
+$gift-offset-y: -60px;
+$gift-width: 47px;
+$gift-height: 47px;
+$gift-total-width: 158px;
+$gift-total-height: 141px;
+$gift-image: '../images/sprite.png';
+$gift: (61px, 60px, -61px, -60px, 47px, 47px, 158px, 141px, '../images/sprite.png', 'gift', );
+$heart-name: 'heart';
+$heart-x: 38px;
+$heart-y: 120px;
+$heart-offset-x: -38px;
+$heart-offset-y: -120px;
+$heart-width: 23px;
+$heart-height: 20px;
+$heart-total-width: 158px;
+$heart-total-height: 141px;
+$heart-image: '../images/sprite.png';
+$heart: (38px, 120px, -38px, -120px, 23px, 20px, 158px, 141px, '../images/sprite.png', 'heart', );
+$hit-name: 'hit';
+$hit-x: 0px;
+$hit-y: 0px;
+$hit-offset-x: 0px;
+$hit-offset-y: 0px;
+$hit-width: 61px;
+$hit-height: 60px;
+$hit-total-width: 158px;
+$hit-total-height: 141px;
+$hit-image: '../images/sprite.png';
+$hit: (0px, 0px, 0px, 0px, 61px, 60px, 158px, 141px, '../images/sprite.png', 'hit', );
+$new-name: 'new';
+$new-x: 0px;
+$new-y: 60px;
+$new-offset-x: 0px;
+$new-offset-y: -60px;
+$new-width: 61px;
+$new-height: 60px;
+$new-total-width: 158px;
+$new-total-height: 141px;
+$new-image: '../images/sprite.png';
+$new: (0px, 60px, 0px, -60px, 61px, 60px, 158px, 141px, '../images/sprite.png', 'new', );
+$next-name: 'next';
+$next-x: 147px;
+$next-y: 96px;
+$next-offset-x: -147px;
+$next-offset-y: -96px;
+$next-width: 10px;
+$next-height: 16px;
+$next-total-width: 158px;
+$next-total-height: 141px;
+$next-image: '../images/sprite.png';
+$next: (147px, 96px, -147px, -96px, 10px, 16px, 158px, 141px, '../images/sprite.png', 'next', );
+$prev-name: 'prev';
+$prev-x: 108px;
+$prev-y: 60px;
+$prev-offset-x: -108px;
+$prev-offset-y: -60px;
+$prev-width: 10px;
+$prev-height: 16px;
+$prev-total-width: 158px;
+$prev-total-height: 141px;
+$prev-image: '../images/sprite.png';
+$prev: (108px, 60px, -108px, -60px, 10px, 16px, 158px, 141px, '../images/sprite.png', 'prev', );
+$sale-name: 'sale';
+$sale-x: 61px;
+$sale-y: 0px;
+$sale-offset-x: -61px;
+$sale-offset-y: 0px;
+$sale-width: 61px;
+$sale-height: 60px;
+$sale-total-width: 158px;
+$sale-total-height: 141px;
+$sale-image: '../images/sprite.png';
+$sale: (61px, 0px, -61px, 0px, 61px, 60px, 158px, 141px, '../images/sprite.png', 'sale', );
+$tw-name: 'tw';
+$tw-x: 122px;
+$tw-y: 0px;
+$tw-offset-x: -122px;
+$tw-offset-y: 0px;
+$tw-width: 36px;
+$tw-height: 36px;
+$tw-total-width: 158px;
+$tw-total-height: 141px;
+$tw-image: '../images/sprite.png';
+$tw: (122px, 0px, -122px, 0px, 36px, 36px, 158px, 141px, '../images/sprite.png', 'tw', );
+$user-name: 'user';
+$user-x: 122px;
+$user-y: 96px;
+$user-offset-x: -122px;
+$user-offset-y: -96px;
+$user-width: 25px;
+$user-height: 23px;
+$user-total-width: 158px;
+$user-total-height: 141px;
+$user-image: '../images/sprite.png';
+$user: (122px, 96px, -122px, -96px, 25px, 23px, 158px, 141px, '../images/sprite.png', 'user', );
+$spritesheet-width: 158px;
+$spritesheet-height: 141px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($bag, $buton-ico, $clok, $fb, $gift, $heart, $hit, $new, $next, $prev, $sale, $tw, $user, );
+$spritesheet: (158px, 141px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
