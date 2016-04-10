@@ -24,16 +24,31 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
     $('.clok').bind('click',function(){
-        $('.delivery').slideUp(1000);
+        $('.delivery').slideUp(700);
+    });
+
+    $('.hamburger').bind('click',function () {
+        $(this).toggleClass("is-active").nextAll('ul').slideToggle();
+    });
+    $('.butt-sort').bind('click',function () {
+        $('.article-box').slideToggle();
     });
 
     $('.bxslider').bxSlider({
-        minSlides: 3,
+        minSlides: 1,
         maxSlides: 5,
-        slideWidth: 239,
+        slideWidth: 235,
+        slideMargin: 0,
         pagerType: "short",
         nextText:"<i class='next'></i>",
         prevText:"<i class='prev'></i>"
     })
 
+});
+
+$(function(){
+    $('.loader-box,.loader').fadeIn(10); //показывает фон и индикатор
+    $(window).load(function() {
+        $('.loader-box,.loader').fadeOut(1000); //скрывает, после загрузки страницы
+    });
 });

@@ -67,18 +67,18 @@ form{
       &:focus{
         outline: none;
       }
-      &[type='text']{
-        width:90%;
-      }
-      &[type='search']{
-        background: url('../images/search-button.png') 0 0 no-repeat;
-        cursor: pointer;
-        width: 18px;
-        height: 19px;
-        float: right;
-        margin-top:3px;
-      }
     }
+  }
+  .form-text{
+    width:90%;
+  }
+  .but-search{
+    background: url('../images/search-button.png') 0 0 no-repeat;
+    cursor: pointer;
+    width: 18px;
+    height: 19px;
+    float: right;
+    margin-top:3px;
   }
 }
 
@@ -148,6 +148,9 @@ form{
   border-bottom: 1px solid #ff7626;
   text-align: center;
   margin:0 0 20px;
+  .container{
+    position: relative;
+  }
   ul{
 
   }
@@ -179,10 +182,31 @@ form{
   }
 }
 
+.hamburger-label{
+  vertical-align: top;
+  padding:0 0 0 5px;
+}
 
 // \header\
 
+
+
+
 // article
+
+.butt-sort{
+  position: absolute;
+  top: 6px;
+  right: 11px;
+  width:150px;
+  a{
+    width: 148px;
+    padding:9px;
+    background-color: #ff7626;
+    color: #fff;
+    display: inline-block;
+  }
+}
 article{
   border: 13px solid #efefef;
   padding: 3px 13px 20px;
@@ -759,6 +783,7 @@ nav{
   }
 }
 
+
 .soz{
   li{
     display: inline-block;
@@ -766,6 +791,11 @@ nav{
   }
   a{
     display: inline-block;
+    opacity:0.8;
+    @include transition(all 0.5s $ease-out-cubic);
+    &:hover{
+      opacity:1;
+    }
   }
 }
 
@@ -774,6 +804,14 @@ nav{
   padding:37px 0;
 }
 
+
+.footer-nav-mob{
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after{
+    background-color: #fff;
+  }
+}
 
 // \footer\
 

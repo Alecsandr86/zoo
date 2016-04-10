@@ -7,10 +7,34 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,600&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <style>
+        .loader-box{
+            position :fixed;
+            top :0;
+            left :0;
+            right :0;
+            bottom :0;
+            width :100%;
+            background-color :#fff;
+            z-index :9999;
+        }
+        .loader{
+            position :absolute;
+            top :50%;
+            left :50%;
+            margin :-32px 0 0 -32px;
+            fill:#ff7626;
+        }
+    </style>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
+
+<div class="loader-box">
+    <img class="loader" src="images/loading-spinning-bubbles.svg" alt="loader">
+</div>
+
 <div class="container-fluid">
     <div class="row">
         <header>
@@ -22,56 +46,63 @@
             </div>
             <div class="container">
                 <div class="header-contact">
-                     <div class="row">
-                        <div class="col-lg-2">
+                    <div class="row">
+                        <div class="col-lg-2 col-xl-2 col-md-2">
                             <a class="logo" href="javascript: void(0);">
                                 <img src="images/logo.png" alt="logo">
                             </a>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-3 col-xl-4 col-md-6 hidden-sm-down">
                             <ul class="contact-center">
-                                <li> <b>8 (800) 775 48 01</b>  <span>Бесплатно по России</span></li>
-                                <li> <b>8 (495) 380 48 01</b> <span>Контакт-центр</span></li>
-                                <li>Ваш регион  <a href="javascript: void(0);">Москва</a></li>
+                                <li><b>8 (800) 775 48 01</b> <span>Бесплатно по России</span></li>
+                                <li><b>8 (495) 380 48 01</b> <span>Контакт-центр</span></li>
+                                <li>Ваш регион <a href="javascript: void(0);">Москва</a></li>
                             </ul>
                         </div>
-                         <div class="col-lg-3">
-                             <form class="search both" action="javascript: void(0);">
-                                 <input type="text" placeholder="Поиск по товарам и брендам">
-                                 <input type="search">
-                             </form>
-                             <ul class="list-mag">
-                                 <li><a href="javascript: void(0);">О магазине</a></li>
-                                 <li><a href="javascript: void(0);">Доставка</a></li>
-                                 <li><a href="javascript: void(0);">Контакты</a></li>
-                             </ul>
-                         </div>
-                         <div class="col-lg-3">
-                             <ul class="to-come">
-                                 <li>
-                                     <i class="user"></i>
-                                     <a href="javascript: void(0);">Войти</a>
-                                 </li>
-                                 <li>
-                                     <i class="heart"></i>
-                                     <span class="quantity">0</span>
-                                 </li>
-                                 <li>
-                                     <i class="bag"></i>
-                                     <span class="quantity">0</span>
-                                 </li>
-                                 <li>
-                                     <span class="sum">0</span>
-                                 </li>
-                             </ul>
-                         </div>
+                        <div class="col-lg-4 col-xl-3 hidden-md-down">
+                            <form class="search both" action="javascript: void(0);">
+                                <input class="form-text" type="text" placeholder="Поиск по товарам и брендам">
+                                <input class="but-search" type="search">
+                            </form>
+                            <ul class="list-mag">
+                                <li><a href="javascript: void(0);">О магазине</a></li>
+                                <li><a href="javascript: void(0);">Доставка</a></li>
+                                <li><a href="javascript: void(0);">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-xl-3 col-md-4">
+                            <ul class="to-come">
+                                <li>
+                                    <i class="user"></i>
+                                    <a href="javascript: void(0);">Войти</a>
+                                </li>
+                                <li>
+                                    <i class="heart"></i>
+                                    <span class="quantity">0</span>
+                                </li>
+                                <li>
+                                    <i class="bag"></i>
+                                    <span class="quantity">0</span>
+                                </li>
+                                <li>
+                                    <span class="sum">0</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <nav class="nav">
                 <div class="container">
                     <div class="row">
-                        <ul>
+                        <button class="hamburger hamburger--collapse hidden-lg-up left" type="button">
+                          <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                          </span>
+                            <span class="hamburger-label">Меню</span>
+                        </button>
+                        <div class="cr"></div>
+                        <ul class="header-nav">
                             <li>
                                 <a href="javascript: void(0);">Собаки</a>
                             </li>
@@ -104,6 +135,9 @@
                             </li>
 
                         </ul>
+                        <div class="butt-sort hidden-lg-up">
+                            <a href="javascript: void(0);">Сортировать</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -111,8 +145,8 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-3">
-            <article>
+        <div class="col-lg-4 col-xl-3">
+            <article class="article-box">
                 <ul class="list-nav">
                     <li><a href="javascript: void(0);">Корма</a></li>
                     <li><a href="javascript: void(0);">Доставка</a></li>
@@ -201,7 +235,7 @@
                 </ul>
             </article>
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-8 col-xl-9">
             <section>
                 <ul class="bread-crumbs">
                     <li>
@@ -572,6 +606,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <nav class="footer-nav">
+                    <button class="hamburger hamburger--collapse hidden-lg-up left footer-nav-mob" type="button">
+                          <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                          </span>
+                    </button>
+                    <div class="cr"></div>
                     <ul>
                         <li><a href="javascript: void(0);">Собаки</a></li>
                         <li><a href="javascript: void(0);">Кошки</a></li>
@@ -586,7 +626,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 hidden-md-down">
                 <nav class="item-foot">
                     <ul>
                         <li><a href="javascript: void(0);">О магазине</a></li>
@@ -623,7 +663,7 @@
                     <li><a class="tw" href="javascript: void(0);"></a></li>
                 </ul>
             </div>
-            <div class="col-lg-12">
+            <div class="col-lg-12 hidden-sm-down">
                 <div class="copyrait both">
                     <p class="left">&copy; zoopassage.ru, 2016 </p>
                     <a class="right" href="javascript: void(0);">Сделано в WebПуск</a>
